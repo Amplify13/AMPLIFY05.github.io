@@ -75,27 +75,31 @@ public. This includes songs, documents, books, cartoons, advertisements, video g
     <img src="https://raw.githubusercontent.com/Amplify13/Pro_Web/main/Photos/TheRoundHouse_CarnivalofLight.jpg" alt="Carnival Of Light" height="300" width="500">
     <p>A lost Beatles song still awaiting a release.</p>
     <hr>
-    <form action="https://webdevbasics.net/scripts/demo.php" method="POST">
-      <div>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required> 
-      </div>
-      <div>
-        <label for="feedback">Feedback:</label>
-        <input type="text" id="feedback" name="feedback" required>
-      </div>
-      <div>
-        <label for="dropdown">Select your rating</label>
-        <select id="dropdown" name="dropdown" required>
-          <option value="option1">Very Good</option>
-          <option value="option2">Good</option>
-          <option value="option3">Neutral</option>
-          <option value="option4">Bad</option>
-          <option value="option5">Very Bad</option>
-        </select>
-      </div>
-      <button type="submit">Submit</button>
-    </form>
+    <form action="send_email.php" method="POST">
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required> 
+  </div>
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+  <div>
+    <label for="feedback">Feedback:</label>
+    <textarea id="feedback" name="feedback" required></textarea>
+  </div>
+  <div>
+    <label for="dropdown">Select your rating</label>
+    <select id="dropdown" name="dropdown" required>
+      <option value="Very Good">Very Good</option>
+      <option value="Good">Good</option>
+      <option value="Neutral">Neutral</option>
+      <option value="Bad">Bad</option>
+      <option value="Very Bad">Very Bad</option>
+    </select>
+  </div>
+  <button type="submit">Submit</button>
+</form>
   </main>
   <footer>
     Copyright © 2024 Abigail Pike<br><a href="mailto:ap00370.my.westga.edu">ap00370.my.westga.edu</a><br> 
